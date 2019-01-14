@@ -1,6 +1,6 @@
 {
   "name": "@tuia/alioss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "aliyun oss process",
   "keywords": [
     "@minjs",
@@ -8,10 +8,10 @@
     "oss"
   ],
   "files": [
-    "src/index.js",
-    "lib"
+    "lib",
+    "alioss.d.ts"
   ],
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "types": "alioss.d.ts",
   "author": "303890562@qq.com",
   "repository": {
@@ -21,7 +21,8 @@
   "license": "MIT",
   "scripts": {
     "test": "babel-node test/index.js",
-    "build": "rm -rf lib/* && rollup -c"
+    "build": "rm -rf lib/* && rollup -c && npm run compile",
+    "compile": "babel --config .babelrc src -d lib"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

@@ -13,16 +13,8 @@ export default {
   input: 'src/index.js',
   output: [
     {
-      file: file('cjs'),
-      format: 'cjs'
-    },
-    {
-      file: file('es'),
-      format: 'es'
-    },
-    {
-      file: file('brower'),
-      format: 'iife',
+      file: file('min'),
+      format: 'umd',
       name: moduleNmae
     }
   ],

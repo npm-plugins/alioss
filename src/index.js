@@ -1,7 +1,7 @@
-import oss from './oss/init'
+import oss from './core/init'
 import * as helper from './helper/index'
-import * as proceeImage from './oss/process-image'
-import * as proceeVideo from './oss/process-video'
+import * as proceeImage from './core/process-image'
+import * as proceeVideo from './core/process-video'
 
 export default oss
 export {
