@@ -1,4 +1,4 @@
 // import oss from '../src/index'
-import oss from '../lib/alioss.es'
+import oss, { processImage } from '../lib/index'
 
-oss()
+oss('//xxx.tuia.cn/demo.png').process(processImage.format).result()
