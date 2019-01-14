@@ -1,4 +1,4 @@
-export function oss(url: string, type: string): Alioss
+export default function oss(url: string, type: string): Alioss
 
 interface Alioss {
   /**
