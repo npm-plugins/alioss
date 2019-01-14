@@ -1,5 +1,5 @@
 {
-  "name": "@minjs/aliyun-oss",
+  "name": "@tuia/alioss",
   "version": "1.0.0",
   "description": "aliyun oss process",
   "keywords": [
@@ -7,9 +7,17 @@
     "aliyun",
     "oss"
   ],
+  "files": [
+    "src/index.js",
+    "lib"
+  ],
   "main": "src/index.js",
   "types": "alioss.d.ts",
   "author": "303890562@qq.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm-plugins/alioss.git"
+  },
   "license": "MIT",
   "scripts": {
     "test": "babel-node test/index.js",
