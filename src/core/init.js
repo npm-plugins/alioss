@@ -5,7 +5,7 @@
  * @returns {import("../../alioss").Alioss}
  */
 export default function(url, type = 'image') {
-  const source = `${url}?x-oss-process=${type}`
+  // const source = `${url}?x-oss-process=${type}`
   let target = `${url}?x-oss-process=${type}`
 
   function process(handler) {
@@ -25,19 +25,17 @@ export default function(url, type = 'image') {
     return target
   }
 
-  function info() {
-    return source + '/info'
-  }
+  // function info() {
+  //   return source + '/info'
+  // }
 
-  function averageHue() {
-    return source + '/average-hue'
-  }
+  // function averageHue() {
+  //   return source + '/average-hue'
+  // }
 
   const modules = {
     process,
-    result,
-    info,
-    averageHue
+    result
   }
 
   return modules
