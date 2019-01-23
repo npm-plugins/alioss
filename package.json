@@ -1,6 +1,6 @@
 {
   "name": "@tuia/alioss",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "aliyun oss process",
   "keywords": [
     "@minjs",
@@ -21,7 +21,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "babel-node test/index.js",
+    "test": "node test/index.js",
     "build": "rm -rf lib/* && rollup -c && npm run compile",
     "compile": "babel --config .babelrc src -d lib"
   },

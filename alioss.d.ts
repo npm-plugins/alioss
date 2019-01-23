@@ -10,21 +10,12 @@ interface Alioss {
    * 处理结果
    */
   result(): string
+  /**
+   * 获取图片信息的api
+   */
+  info(): string
+  /**
+   * 获取图片配色的api
+   */
+  averageHue(): string
 }
-
-// interface AliossInfo {
-//   FileSize: InfoFormat,
-//   Format: InfoFormat,
-//   ImageHeight: InfoFormat,
-//   ResolutionUnit: InfoFormat,
-//   XResolution: InfoFormat,
-//   YResolution: InfoFormat
-// }
-
-// interface InfoFormat {
-//   value: string
-// }
-
-// interface AliossHue {
-//   RGB: string
-// }
